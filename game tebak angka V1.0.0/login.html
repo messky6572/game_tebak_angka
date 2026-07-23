@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login to game</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #800080, #008000);
+      }
+
+      .username-y {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+
+      body .username {
+        background: whitesmoke;
+        width: 380px;
+        height: 300px;
+        border-radius: 28px;
+        border: 3px solid cyan;
+        backdrop-filter: blur(50px);
+      }
+
+      .username-x {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .judul-login {
+        display: flex;
+        justify-content: center;
+      }
+
+      .login-page {
+        position: absolute;
+      }
+
+      body div .user {
+        margin-top: 100px;
+        padding: 12px 16px;
+        border-radius: 6px;
+      }
+
+      body div .pass {
+        margin-top: 0px;
+        padding: 12px 16px;
+        border-radius: 6px;
+      }
+
+      .username-x button {
+        padding: 8px;
+        border-radius: 6px;
+        transition: 260ms;
+      }
+
+      .username-x button:hover {
+        cursor: pointer;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="username-y">
+      <div class="username">
+        <div class="judul-login">
+          <h2 class="login-page">Login Page</h2>
+        </div>
+        <div class="username-x">
+          <input class="user" type="text" placeholder="username" />
+          <input class="pass" type="password" placeholder="password" />
+          <button id="login-js">login/masuk</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0./dist/confetti.browser.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

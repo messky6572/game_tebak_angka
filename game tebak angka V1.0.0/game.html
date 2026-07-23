@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>games</title>
+    <style>
+      ::view-transition-old,
+      ::view-transition-new {
+        animation-duration: 500ms;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to right, #3b82f6, #8b5cf6);
+      }
+
+      body .card {
+        position: absolute;
+        background-color: whitesmoke;
+        width: 500px;
+        height: 500px;
+        border-radius: 45px;
+        box-shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+
+      main div h1 {
+        text-align: center;
+        margin-top: 28px;
+      }
+
+      main div p {
+        text-align: center;
+      }
+
+      main .tebak {
+        padding: 8px 15px;
+      }
+
+      .input {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+      }
+
+      main div .btn-tebak {
+        display: flex;
+        justify-content: center;
+        margin-top: 18px;
+      }
+
+      main div button {
+        padding: 8px 18px;
+        background-color: skyblue;
+        transition: 300ms;
+      }
+
+      main div button:hover {
+        padding: 12px 22px;
+      }
+
+      main div .hasil {
+        margin-top: 45px;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1>Game tebak angka</h1>
+        <p>tebak angka dari 1 - 100</p>
+        <div class="input">
+          <input
+            class="tebak"
+            id="angka"
+            type="number"
+            placeholder="tebak angkanya!"
+          />
+        </div>
+        <div class="btn-tebak">
+          <button id="tebak">tebak</button>
+        </div>
+        <p class="hasil" id="hasil"></p>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

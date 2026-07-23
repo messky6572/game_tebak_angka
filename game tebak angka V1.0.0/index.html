@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>games</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #3b82f6, #8b5cf6);
+      }
+
+      nav {
+        margin: 0;
+      }
+
+      nav ul {
+        background-color: rgb(198, 218, 198 0.15);
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        margin: 0 18px;
+        padding: 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 21px;
+        background-color: rgb(198, 218, 198 0.15);
+        padding: 5px;
+        border: 2px solid white;
+        border-radius: 4px;
+        transition: 260ms;
+      }
+
+      nav ul li a:hover {
+        padding: 7px;
+        border-radius: 6px;
+      }
+
+      hr {
+        color: #444;
+      }
+
+      main .judul-game {
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+      }
+
+      main p {
+        margin: 0 16px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+      }
+
+      button {
+        padding: 18px 38px;
+        font-size: 20px;
+        background: skyblue;
+        transition: 300ms;
+      }
+
+      .btn-play:hover {
+        padding: 22px 42px;
+      }
+
+      .version {
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <main>
+      <h3 class="judul-game">Game tebak angka</h3>
+      <!-- teks tutorial -->
+      <p>tebak angka 1 - 100</p>
+      <div class="btn">
+        <button class="btn-play" id="play">play</button>
+      </div>
+    </main>
+    <footer>
+      <div class="version">
+        <small>Version 0.0.1</small>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
